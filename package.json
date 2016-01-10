@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "name": "lPage",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-connect": "latest",
+    "gulp-inject": "^3.0.0",
+    "gulp-livereload": "latest",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.7",
+    "main-bower-files": "^2.9.0"
+  },
+  "dependencies": {}
+}
