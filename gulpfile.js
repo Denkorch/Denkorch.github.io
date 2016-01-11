@@ -1,9 +1,11 @@
 var   gulp = require('gulp')
     , sass = require('gulp-sass')
+    , csso = require('gulp-csso')
     , inject = require('gulp-inject')
     , gutil = require('gulp-util')
     , connect = require('gulp-connect')
     , bowerFiles = require('main-bower-files')
+    , autoprefixer = require('gulp-autoprefixer')
     ;
 
 
@@ -46,6 +48,18 @@ gulp.task('css', function () {
 gulp.task('sass', function () {
   gulp.src('./sass/**/*.sass')
     .pipe(sass().on('error', gutil.log))
+    .pipe(gulp.dest('./css/'));
+});
+
+
+//minify css
+gulp.task('minify-css', function () {
+  gulp.src('./css/*.css')
+    .pipe(autoprefixer({
+      browsers: ['last 38 versions'],
+      cascade: false
+    }))
+    .pipe(csso())
     .pipe(gulp.dest('./css/'));
 });
 

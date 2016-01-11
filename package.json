@@ -4,7 +4,9 @@
   "name": "lPage",
   "devDependencies": {
     "gulp": "latest",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-connect": "latest",
+    "gulp-csso": "^1.0.1",
     "gulp-inject": "^3.0.0",
     "gulp-livereload": "latest",
     "gulp-sass": "^2.0.4",
