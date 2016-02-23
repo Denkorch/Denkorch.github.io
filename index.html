@@ -12,19 +12,368 @@
 
         <!-- bower:css -->
 
+        <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
 
+        <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
 
         <!-- endinject -->
-
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Чому ця бібліотека не підгружається в bower:css ? -->
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
 
     </head>
 
     <body>
+        <div class="wraper">
 
-        <h1>Text</h1>
+            <header>
 
+                <div class="container">
+
+                    <nav class="menu" id="bs-menu">
+                        <div class="menu-logo"><a class="logo-brand" href="#">ZET</a></div>
+                        <div class="menu-dropdown dropdown my-dropdown">
+                            <button class="btn btn-default dropdown-toggle menu-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">MENU</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Our clients</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="header-info column-align-center">
+                        <h1 class="grey-font">Something Nothing</h1>
+                        <p class="grey-font">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <div class="btn-wrap"><a href="#" class="header-btn" role="button">let’s talk</a></div>
+                        <a href="#services" class="down-arrow"></a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main>
+                <!-- SERVICES -->
+                <div class="main-container" id="services">
+                    <div class="container">
+                        <div class="section-header services-header column-align-center">
+                            <h2>SERVICES</h2>
+                            <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 service-icon column-align-center"><img src="img/icons/services-responsive-icon.png" alt="fully responsive"/>
+
+                                <h3>FULLY RESPONSIVE</h3>
+
+                                <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+                            </div>
+                            <div class="col-lg-3 service-icon column-align-center"><img src="img/icons/services-customize-icon.png" alt="easy customize"/>
+
+                                <h3>EASY CUSTOMIZE</h3>
+
+                                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                            </div>
+                            <div class="col-lg-3 service-icon column-align-center"><img src="img/icons/services-seo-icon.png" alt="seo ready"/>
+
+                                <h3>SEO READY</h3>
+
+                                <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                            </div>
+                            <div class="col-lg-3 service-icon column-align-center"><img src="img/icons/services-love-icon.png" alt="love"/>
+
+                                <h3>MADE WITH LOVE</h3>
+
+                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICES END -->
+
+                <!-- WORKS -->
+                <div class="container main-container" id="works">
+
+                    <div class="section-header works-header column-align-center">
+                        <h2>WORKS</h2>
+                        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                    </div>
+
+                    <div class="works-thumbs">
+                        <ul>
+                            <li><a href="#"><img src="img/thumbs/thumb1.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb2.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb3.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb4.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb5.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb6.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb7.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb8.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb9.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb10.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb11.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb12.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb13.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb14.png" alt="thumb"/></a></li>
+                            <li><a href="#"><img src="img/thumbs/thumb15.png" alt="thumb"/></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- WORKS END -->
+
+                <!-- CLIENTS -->
+                <div class="container main-container" id="clients">
+
+                    <div class="section-header clients-header column-align-center">
+                        <h2>HAPPY CLIENTS</h2>
+                        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                    </div>
+
+                    <p>Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang; lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi gesang manah cangkem: nem aken benter bebucal baita dangu</p>
+
+                    <div class="my-slick">
+                        <div class="slick-item">
+                            <img src="img/icons/client-icon.png" alt=""/>
+
+                            <h4>John Brown</h4>
+
+                            <p>Dropbox Senior Developer</p>
+                        </div>
+                        <div class="slick-item">
+
+                            <img src="img/icons/client-icon1.png" alt=""/>
+
+                            <h4>Mary Jay</h4>
+
+                            <p>Micromax Senior Developer</p>
+                        </div>
+                        <div class="slick-item">
+
+                            <img src="img/icons/client-icon2.png" alt=""/>
+
+                            <h4>Kimberly Thompson</h4>
+
+                            <p>Oracle Senior Developer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- CLIENTS END-->
+                
+                <!-- TEAM START-->
+                <div class="main-container team-container" id="team">
+
+                    <div class="container">
+
+                        <div class="section-header team-header column-align-center">
+                            <h2>OUR PROFESSIONAL TEAM</h2>
+                            <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                        </div>
+
+                        <div class="row team-row">
+                            
+                            <div class="col-sm-3">
+                               <div class="team-profile-item">
+                                   <img src="img/thumbs/team-profile-thumb__img1.jpg" alt="" class=""/>
+
+                                    <h3>Salazar Slytherin</h3>
+
+                                    <p>CEO</p>
+
+                                    <div class="team-social">
+                                        <ul>
+                                            <li class="team-social-item twitter"><a href="#"></a></li>
+                                            <li class="team-social-item linkedin"><a href="#"></a></li>
+                                            <li class="team-social-item vimeo"><a href="#"></a></li>
+                                            <li class="team-social-item dribble"><a href="#"></a></li>
+                                            <li class="team-social-item envelope"><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                               </div>
+
+                            </div>
+                            
+                            <div class="col-sm-3">
+
+                                <div class="team-profile-item">
+                                    <img src="img/thumbs/team-profile-thumb__img2.jpg" alt="" class=""/>
+
+                                    <h3>Godric Gryffindor</h3>
+
+                                    <p>Lead Developer</p>
+
+                                    <div class="team-social">
+                                        <ul>
+                                            <li class="team-social-item twitter"><a href="#"></a></li>
+                                            <li class="team-social-item linkedin"><a href="#"></a></li>
+                                            <li class="team-social-item vimeo"><a href="#"></a></li>
+                                            <li class="team-social-item dribble"><a href="#"></a></li>
+                                            <li class="team-social-item envelope"><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="team-profile-item">
+                                    <img src="img/thumbs/team-profile-thumb__img3.jpg" alt="" class=""/>
+
+                                    <h3>Rowena Ravenclaw</h3>
+
+                                    <p>Lead Designer</p>
+
+                                    <div class="team-social">
+                                        <ul>
+                                            <li class="team-social-item twitter"><a href="#"></a></li>
+                                            <li class="team-social-item linkedin"><a href="#"></a></li>
+                                            <li class="team-social-item vimeo"><a href="#"></a></li>
+                                            <li class="team-social-item dribble"><a href="#"></a></li>
+                                            <li class="team-social-item envelope"><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="team-profile-item">
+                                    <img src="img/thumbs/team-profile-thumb__img4.jpg" alt="" class=""/>
+
+                                    <h3>Helga Hufflepuff</h3>
+
+                                    <p>Marketing</p>
+
+                                    <div class="team-social">
+                                        <ul>
+                                            <li class="team-social-item twitter"><a href="#"></a></li>
+                                            <li class="team-social-item linkedin"><a href="#"></a></li>
+                                            <li class="team-social-item vimeo"><a href="#"></a></li>
+                                            <li class="team-social-item dribble"><a href="#"></a></li>
+                                            <li class="team-social-item envelope"><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="btn-wrap"><a href="#" class="team-btn" role="button">meet our full team</a></div>
+                    </div>
+
+                </div>
+                <!-- TEAM END-->
+
+                <!--BRANDS START-->
+                <div class="container-fluid" id="brands">
+                    <div class="row flex flex-row brands">
+                        <div class="brand-img-div"><img src="img/icons/coca-cola-icon.png" alt=""/></div>
+                        <div class="brand-img-div"><img src="img/icons/dropbox-icon.png" alt=""/></div>
+                        <div class="brand-img-div"><img src="img/icons/intel-icon.png" alt=""/></div>
+                        <div class="brand-img-div"><img src="img/icons/zendesk-icon.png" alt=""/></div>
+                        <div class="brand-img-div"><img src="img/icons/nokia-icon.png" alt=""/></div>
+                    </div>
+                </div>
+                <!--BRANDS END-->
+
+                <!--Pricing start-->
+                <div class="container main-container" id="pricing">
+
+                    <div class="section-header pricing-header column-align-center">
+                        <h2>PRICING TABLE</h2>
+                        <p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 price-content">
+                            <div class="price">
+                                <p>Standard Pack</p>
+                                <h1>$50</h1>
+                            </div>
+                            <div class="price-text">
+                                <p>exercitation ullaborum sed do
+                                    eiusmod tempor incididunt ut quis
+                                    nostrud exercitation ullamco laboris</p>
+                                <div class="btn-wrap"><a class="signup-btn" role="button">SIGN UP</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 price-content">
+                            <div class="price">
+                                <p>Best Pack</p>
+                                <h1>$100</h1>
+                            </div>
+                            <div class="price-text">
+                                <p>eiusmod tempor incididunt ut quis
+                                    nostrud exercitation ullamco laboris
+                                    minim aliqua labore dolore nostrud
+                                    laboris ullamco incididunt quis</p>
+                                <div class="btn-wrap"><a class="signup-btn" role="button">SIGN UP</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 price-content">
+                            <div class="price">
+                                <p>VIP Pack</p>
+                                <h1>$250</h1>
+                            </div>
+                            <div class="price-text">
+                                <p>incididunt ut labore et dolore magna
+                                    aliqua Ut enim ad minim veniam quis nostrud
+                                    exercitation ullaborum sed do
+                                    eiusmod tempor incididunt ut quis
+                                    nostrud exercitation ullamco laboris</p>
+                                <div class="btn-wrap"><a class="signup-btn" role="button">SIGN UP</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Pricing end-->
+
+                <div class="contacts-wrap" id="contacts">
+
+                    <div class="">
+
+                        <div class="gmaps col-lg-6 col-md-12"></div>
+
+                        <div class="form col-lg-6 col-md-12">
+                            <form class="send-message">
+                                <label><span>Name</span><input type="text"/></label>
+                                <label><span>Email</span><input type="text"/></label>
+                                <label><span>Phone</span><input type="text"/></label>
+                                <label><span>Message</span><textarea name="" cols="1" rows="6"></textarea></label>
+                                <div class="btn-wrap"><button class="btn-submit" type="submit">Submit</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <footer class="container"></footer>
+
+            </main>
+
+        </div>
+        <!--test menu start-->
+
+        <nav id="fixed-menu" class="fixed-menu slide-menu">
+            <a href="#" id="menuButton" class="test-menu-btn"></a>
+            <ul class="menuList">
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Our clients</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!--test menu end-->
         <!-- bower:js -->
 
         <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -33,7 +382,11 @@
 
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
+        <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+
         <!-- endinject -->
+
+        <script src="js/script.js"></script>
 
     </body>
 
